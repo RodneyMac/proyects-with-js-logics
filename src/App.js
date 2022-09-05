@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <nav className="navbar bg-light d-flex flex-row justify-content-center">
+        <button className='btn btn-primary mx-2'>Button 1</button>
+        <button className='btn btn-primary mx-2'>Button 2</button>
+        <button className='btn btn-primary mx-2'>Button 3</button>
+        {/* <div className="container-fluid bg-light">
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon bg-light"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          </div>
+        </div> */}
+      </nav>
     </div>
   );
 }
