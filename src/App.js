@@ -1,23 +1,20 @@
 import './App.css';
+import Nav from './components/Nav/Nav';
 import Chat from './components/Chat/Chat';
+import Crud from './components/Crud/Crud';
+import LogicButtons from './components/Logic Buttons/LogicButtons';
+import {Routes, Route} from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <nav className="navbar bg-dark d-flex flex-row justify-content-center">
-        <button className='btn btn-primary mx-2'>Button 1</button>
-        <button className='btn btn-primary mx-2'>Button 2</button>
-        <button className='btn btn-primary mx-2'>Button 3</button>
-        {/* <div className="container-fluid bg-light">
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon bg-light"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          </div>
-        </div> */}
-      </nav>
-      <Chat/>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Nav/>}/>
+        <Route path="/chat" element={<Chat/>}/>
+        <Route path="/logic-buttons" element={<LogicButtons/>}/>
+        <Route path="/crud" element={<Crud/>}/>
+      </Routes>
+    </>
   );
 }
 
