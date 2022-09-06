@@ -1,10 +1,10 @@
-// import logo from './logo.svg';
 import './App.css';
+import Chat from './components/Chat/Chat';
 
 function App() {
   return (
     <div>
-      <nav className="navbar bg-light d-flex flex-row justify-content-center">
+      <nav className="navbar bg-dark d-flex flex-row justify-content-center">
         <button className='btn btn-primary mx-2'>Button 1</button>
         <button className='btn btn-primary mx-2'>Button 2</button>
         <button className='btn btn-primary mx-2'>Button 3</button>
@@ -16,6 +16,7 @@ function App() {
           </div>
         </div> */}
       </nav>
+      <Chat/>
     </div>
   );
 }
