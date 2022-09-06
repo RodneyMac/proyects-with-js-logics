@@ -9,7 +9,7 @@ function App() {
     <>
       <Routes>
         <Route path="/chat" element={<Chat/>}/>
-        <Route path="/logic-buttons" element={<LogicButtons/>}/>
+        <Route path="/data-picker" element={<LogicButtons/>}/>
         <Route path="/crud" element={<Crud/>}/>
       </Routes>
     </>
