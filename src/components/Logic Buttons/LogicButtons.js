@@ -27,7 +27,7 @@ const LogicButtons = () => {
       <Nav/>
       <div className='mt-4 mb-4 d-flex justify-content-center'>
         <div className=''>
-        <h3 className='text-success mt-2 text-center'>Logic Buttons</h3>
+        <h3 className='text-success mt-2 text-center'>Data Picker</h3>
           <div className='mb-3 mt-3'>
             <input type="text" className='form-control' name="number" onChange={handleChange} value={quantity}/>
           </div>
